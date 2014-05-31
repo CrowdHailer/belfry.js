@@ -69,4 +69,11 @@ clearResizeListeners();
 
 ## Debug Code
 
+Useful code snippet to listen to all messages passing through a channel using cumin.
+```js
+var logChannel = _.compose(_.invoke(_.log), tower.subscribe);
 
+logChannel('thisChannel');
+
+_.each(logChannel)('listen', 'to', 'all', 'these', 'channels');
+```
