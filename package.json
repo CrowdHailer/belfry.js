@@ -1,6 +1,6 @@
 {
   "name": "belfry",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple publish subscribe library returning curried functions to work with cumin",
   "main": "index.js",
   "scripts": {
