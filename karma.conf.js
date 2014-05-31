@@ -3,7 +3,8 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'belfry.js',
+      'bower_components/cumin/dist/cumin.js',
+      'dist/belfry.js',
       'spec/belfry_spec.js'
     ],
     exclude: [
