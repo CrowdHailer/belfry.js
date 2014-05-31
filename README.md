@@ -1,6 +1,12 @@
 Belfry.js
 ========
-##### A simple publish subscribe library returning curried functions to work with cumin
+##### A simple publish subscribe library returning curried functions to work with cumin.
+
+[ ![Codeship Status for CrowdHailer/belfry.js](https://www.codeship.io/projects/d391bdb0-cada-0131-bf83-1a857f2293be/status?branch=master)](https://www.codeship.io/projects/22574)
+
+[![Code Climate](https://codeclimate.com/github/CrowdHailer/belfry.js.png)](https://codeclimate.com/github/CrowdHailer/belfry.js)
+
+[![Code Climate](https://codeclimate.com/github/CrowdHailer/belfry.js/coverage.png)](https://codeclimate.com/github/CrowdHailer/belfry.js)
 
 ## Installation
 
