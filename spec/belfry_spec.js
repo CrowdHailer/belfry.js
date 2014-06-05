@@ -51,17 +51,9 @@ describe('tower', function(){
     });
   });
 
-
-
-  it('should return a unique identifier', function(){
-    var uid1 = tower.subscribe('channel1')(dummy);
-    var uid2 = tower.subscribe('channel2')(dummy2);
-    expect(uid2).not.toBe(uid1);
-  });
-
-  it('should be possible to unsubscribe with a uid and topic', function(){
-    var uid = tower.subscribe('channelX')(dummy);
-    tower.unsubscribe('channelX')(uid);
+  it('should be possible to unsubscribe with the returned function', function(){
+    var cancelSubscription = tower.subscribe('channelX')(dummy);
+    cancelSubscription();
     tower.publish('channelX')({x: 1});
     expect(dummy).not.toHaveBeenCalled();
   });
