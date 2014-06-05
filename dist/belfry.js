@@ -11,6 +11,7 @@
       return function(reaction){
         var channel = channels[topic] = channels[topic] || {};
         channel[++uid] = reaction;
+        // function manages interstionc
         return function(){
           unsubscribe(topic)(uid);
         };
@@ -42,6 +43,7 @@
       subscribe: subscribe,
       unsubscribe: unsubscribe,
       publish: publish
+      // clear channel clear all.
     };
   }
 
